@@ -38,15 +38,60 @@ header {
   align-items: center;
 }
 
+#timeline::before {
+  content: "";
+  position: absolute;
+  left: 47.31%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: black;
+}
+
 .timeline-item {
   position: relative;
   margin-bottom: 2rem;
+  width: 20%;
+  display: flex;
+  width: 40%;
+}
+
+.project-date {
+  flex: 1;
+  color: rgb(134, 134, 134);
+}
+
+.project-name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.project-name::before {
+  content: "";
+  position: absolute;
+  top: 0.3rem;
+  margin-left: -40px;
+  background-color: black;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
+/*
+#timeline::before {
+  content: "";
+  position: absolute;
+  left: 38.2%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: black;
 }
 
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: -10px;
+  left: -40px;
   top: 0.5rem;
   width: 20px;
   height: 20px;
@@ -54,6 +99,7 @@ header {
   border: 3px solid balck;
   border-radius: 50%;
 }
+*/
 /* Button container */
 
 .button-container {
